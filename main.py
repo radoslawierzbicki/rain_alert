@@ -1,16 +1,15 @@
-# This is a sample Python script.
+import requests
+from dotenv import load_dotenv
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+load_dotenv()  # Ładuje zmienne środowiskowe z pliku .env
+api_key = os.getenv("API_KEY")
 
+OMW_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+weather_params ={
+    "appid": api_key,
+    "q": "Gdańsk", "lat": 54.352024, "lon": 18.646639}
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyChafsfdsfsa')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+response = requests.get(OMW_Endpoint, params=weather_params)
+print(response.json())
