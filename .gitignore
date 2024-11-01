@@ -1,0 +1,13 @@
+# Wyklucz folder PyCharm
+.idea/
+
+# Wyklucz środowisko wirtualne
+.venv/
+venv/
+
+# Pliki buforowane przez Pythona
+__pycache__/
+*.py[cod]
+
+# Pliki systemowe
+.DS_Store
