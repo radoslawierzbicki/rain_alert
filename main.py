@@ -12,7 +12,7 @@ OMW_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 
 weather_params ={
     "appid": api_key,
-    "lat": 61.664837, "lon": 6.816487,
+    "lat": 54.352024, "lon": 18.646639,
     "cnt": 4}
 
 response = requests.get(OMW_Endpoint, params=weather_params)
