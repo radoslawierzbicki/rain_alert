@@ -20,7 +20,7 @@ This Python project is a weather notification bot that checks the weather foreca
 Install the necessary libraries by running:
 ```bash
 pip install -r requirements.txt
-'''
+```
 ## Environment Variables
 
 To securely store your API keys and other sensitive information, create a `.env` file in the root directory of your project. Add the following variables to the file:
@@ -29,6 +29,7 @@ To securely store your API keys and other sensitive information, create a `.env`
 API_KEY=your_openweathermap_api_key
 ACCOUNT_SID=your_twilio_account_sid
 AUTH_TOKEN=your_twilio_auth_token
+```
 Replace your_openweathermap_api_key, your_twilio_account_sid, and your_twilio_auth_token with your actual keys.
 
 Automating with PythonAnywhere
