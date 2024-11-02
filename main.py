@@ -30,6 +30,6 @@ if will_rain:
         .create(
         body="It's going to rain today. Remember to take an umbrella!",
         from_='+phone_number',
-        to='+phone number'
+        to='+phone_number'
     )
     print(message.status)
